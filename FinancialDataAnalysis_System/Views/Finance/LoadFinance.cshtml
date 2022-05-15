@@ -1,0 +1,77 @@
+﻿@model Organization
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 py-3" asp-action="Index" asp-controller="Home" style="background: url(/images/NavbarLogo.svg) center center no-repeat;">&nbsp;</a>
+    <button class="btn btn-outline-info ml-md-auto mr-2" type="submit">Личный кабинет</button>
+    <button class="btn btn-outline-info mr-3" type="submit">Выход</button>
+</nav>
+<div class="container-fluid">
+     <div class="row">
+        <div class="col-2">
+            <nav id="sidebarMenu" class="col-md-auto d-md-block bg-light sidebar p-0 pr-4">
+                <div class="sidebar-sticky pt-3" style="height: calc(100vh - 61.6px);">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3">
+                            <a class="text-decoration-none text-secondary px-4 py-1" asp-action="Index" asp-controller="Home" style="font-size: 18px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"></path>
+                                    <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"></path>
+                                </svg>
+                                Организации
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a class="text-decoration-none text-secondary px-4 py-1" href="#" style="font-size: 18px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-clipboard-data" viewBox="0 0 16 16">
+                                    <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"></path>
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+                                </svg>
+                                Анализ
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a class="text-decoration-none text-secondary px-4 py-1" href="#" style="font-size: 18px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+                                    <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
+                                    <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"></path>
+                                    <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"></path>
+                                </svg>
+                                Отчеты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+         <div class="col-6">
+        <form method="post" enctype="multipart/form-data" asp-controller="Finance" asp-action="LoadFinance">
+            <h4 class="my-3">Загрузить бухгалтерскую отчётность (Форма №1) </h4>
+                            <div class="input-group my-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" name="fileExcel1" class="custom-file-input" aria-describedby="inputGroupFileAddon01" required>
+                                    <label class="custom-file-label" for="inputGroupFile01"></label>
+                                </div>
+                                </div>
+                                <h4>Загрузить финансовую отчётность (Форма №2) </h4>
+                                <div class="input-group my-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" name="fileExcel2" class="custom-file-input" aria-describedby="inputGroupFileAddon02" required>
+                                    <label class="custom-file-label" for="inputGroupFile02"></label>
+                                </div>
+                            </div>
+                        <div>
+                            <button type="button" class="btn btn-secondary">Отмена</button>
+                            <button type="submit" class="btn btn-primary">Загрузить</button>
+                        </div>
+                    </form>
+                </div>
+                </div>
+                </div>
+        <script src="https://bs-custom-file-input.netlify.app/dist/bs-custom-file-input.min.js"></script>
+        <script>bsCustomFileInput.init()</script>

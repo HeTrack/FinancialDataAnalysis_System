@@ -1,0 +1,16 @@
+<svg width="191" height="48" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_1" fill-rule="evenodd" fill="none">
+   <path stroke="null" id="svg_3" d="m23.988,20.843l13.41,13.213c6.092,-7.684 6.069,-18.778 -0.358,-26.546l-13.052,13.333z" fill="#1EB0CD"/>
+   <path stroke="null" id="svg_4" d="m15.422,35.998l5.488,-5.506l5.487,5.506l-10.975,0zm5.449,-11.97l-17.327,17.7c10.398,8.345 25.083,8.053 35.07,-0.216l-17.742,-17.484l-0.001,0z" fill="#FFF"/>
+   <path stroke="null" id="svg_5" d="m34.064,4.578c-8.307,-6.645 -20.442,-6.044 -28.048,1.726c-7.606,7.77 -7.987,19.954 -1.215,28.167l29.263,-29.893z" fill="#1EB0CD"/>
+   <text stroke="#ffffff" transform="matrix(0.8767680560570205,0,0,1.032531415955232,31.636328277392856,2.422023855750365) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_6" y="29.216527" x="23.689361" stroke-width="0" fill="#ffffff">IZFP SYSTEM</text>
+  </g>
+ </g>
+</svg>
